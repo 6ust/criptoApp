@@ -22,7 +22,7 @@
         android:layout_height="28dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
-        android:text="@string/criptomoedalbl"
+        android:text="@string/criptomoeda_lbl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
@@ -33,7 +33,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
-        android:entries="@array/criptomoedas_array"
+        android:entries="@array/criptomoedas_name_array"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tvCriptomoeda"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
@@ -44,7 +44,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
-        android:text="@string/moedalbl"
+        android:text="@string/moeda_lbl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvCriptomoeda" />
 
@@ -72,15 +72,25 @@
         app:layout_constraintTop_toBottomOf="@+id/spMoeda" />
 
     <TextView
-        android:id="@+id/moedaValor"
+        android:id="@+id/tvRate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="50dp"
-        android:text="@string/moeda"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        android:text="@string/rate_lbl"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAtualizar" />
+
+    <TextView
+        android:id="@+id/rate_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/rate_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvRate"
         app:layout_constraintTop_toBottomOf="@+id/btAtualizar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

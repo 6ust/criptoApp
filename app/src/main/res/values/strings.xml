@@ -3,9 +3,10 @@
     <string name="atualizar">Atualizar</string>
     <string name="valor">Valor</string>
     <string name="ip">IP</string>
-    <string name="criptomoedalbl">Criptomoeda</string>
-    <string name="moedalbl">Moeda</string>
-    <string name="moeda">Valor: $.$$</string>
+    <string name="criptomoeda_lbl">Criptomoeda</string>
+    <string name="moeda_lbl">Moeda</string>
+    <string name="rate_lbl">Valor: </string>
+    <string name="rate_value"> 00.00 </string>
 
     <!-- REMOVER MOEDA NAME E ISO CODE QUE NÃO TRAZEREM RESULTADOS   -->
     <!-- EXEMPLO:  <item>Afegane afegão (؋)</item> E <item>AFN</item> -->
@@ -322,16 +323,84 @@
         <item>USD</item>
     </string-array>
 
-    <!--  POPULAR A LISTA DE criptomoedas_name_array  -->
     <string-array name="criptomoedas_name_array">
-
+        <item>Bitcoin</item>
+        <item>Litecoin</item>
+        <item>Namecoin</item>
+        <item>Peercoin</item>
+        <item>Dogecoin</item>
+        <item>Gridcoin</item>
+        <item>Primecoin</item>
+        <item>Ripple</item>
+        <item>Nxt</item>
+        <item>Emercoin</item>
+        <item>Mastercoin</item>
+        <item>Auroracoin</item>
+        <item>Dash</item>
+        <item>NEO</item>
+        <item>MazaCoin</item>
+        <item>Monero</item>
+        <item>NEM</item>
+        <item>PotCoin</item>
+        <item>Nano</item>
+        <item>CloakCoin</item>
+        <item>Aeon</item>
+        <item>BlackCoin</item>
+        <item>DigitalNote</item>
+        <item>Titcoin</item>
+        <item>Verge</item>
+        <item>Stellar</item>
+        <item>Vertcoin</item>
+        <item>Ethereum</item>
+        <item>Ethereum Classic</item>
+        <item>E-Coins</item>
+        <item>Tether</item>
+        <item>Zcash</item>
+        <item>Bitcoin Cash</item>
+        <item>EOS.IO</item>
+        <item>Niobio Cash</item>
+        <item>Niobium Coin</item>
+        <item>Lunes</item>
     </string-array>
 
-    <!--  EXTENDER LISTA DE CRIPTOMOEDAS  -->
-    <!-- RENOMEAR STRING ARRAY DE criptomoedas_array PARA criptomoedas_iso_code_array  -->
-    <string-array name="criptomoedas_array">
+    <string-array name="criptomoedas_iso_code_array">
         <item>BTC</item>
+        <item>LTC</item>
+        <item>NMC</item>
+        <item>PPC</item>
+        <item>DOGE</item>
+        <item>GRC</item>
+        <item>XPM</item>
+        <item>XRP</item>
+        <item>NXT</item>
+        <item>EMC</item>
+        <item>MSC</item>
+        <item>AUR</item>
+        <item>DASH</item>
+        <item>NEO</item>
+        <item>MZC</item>
+        <item>XMR</item>
+        <item>XEM</item>
+        <item>POT</item>
+        <item>NANO</item>
+        <item>CLOAK</item>
+        <item>AEON</item>
+        <item>BC</item>
+        <item>XDN</item>
+        <item>TIT</item>
+        <item>XVG</item>
+        <item>XLM</item>
+        <item>VTC</item>
         <item>ETH</item>
+        <item>ETC</item>
+        <item>ECS</item>
+        <item>USDT</item>
+        <item>ZEC</item>
+        <item>BCH</item>
+        <item>EOS</item>
+        <item>NBR</item>
+        <item>NBC</item>
+        <item>LUNES</item>
     </string-array>
 
 </resources>

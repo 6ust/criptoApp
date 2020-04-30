@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void carregarValores(String base_param, String quote_param) throws IOException, JSONException {
         Moeda moeda =  AtualizacaoValores.atualizarValor(base_param,quote_param,"");
-        TextView moedaValor = (TextView) findViewById(R.id.moedaValor);
+        TextView moedaValor = (TextView) findViewById(R.id.rate_value);
 
 
         Float moedaFloat = Float.parseFloat(moeda.getRate());
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //ALTERAÇÃO DE MOEDA NOME PARA MOEDA ISO CODE
-    private String getCountryByCode(String name) {
+    private String getMoedaByCode(String name) {
         int i = -1;
         for (String cc: getResources().getStringArray(R.array.moedas_name)) {
             i++;
@@ -50,6 +50,17 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         return getResources().getStringArray(R.array.moedas_iso_code_array)[i];
+    }
+
+    //ALTERAÇÃO DE CRIPTOMOEDA NOME PARA MOEDA ISO CODE
+    private String getCriptomoedaByCode(String name) {
+        int i = -1;
+        for (String cc: getResources().getStringArray(R.array.criptomoedas_name_array)) {
+            i++;
+            if (cc.equals(name))
+                break;
+        }
+        return getResources().getStringArray(R.array.criptomoedas_iso_code_array)[i];
     }
 
     public void btAtualizarOnClickView(View v) {
@@ -61,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
         String base = (String) criptomoeda.getSelectedItem();
         String quote = (String) moeda.getSelectedItem();
 
-        quote = getCountryByCode(quote);
+        base = getCriptomoedaByCode(base);
+        quote = getMoedaByCode(quote);
 
         Toast.makeText(this, quote, Toast.LENGTH_LONG).show();
         try {
@@ -88,7 +100,8 @@ public class MainActivity extends AppCompatActivity {
                     String base = (String) criptomoeda.getSelectedItem();
                     String quote = (String) moeda.getSelectedItem();
 
-                    quote = getCountryByCode(quote);
+                    base = getCriptomoedaByCode(base);
+                    quote = getMoedaByCode(quote);
 
                     try {
                         carregarValores(base, quote);
