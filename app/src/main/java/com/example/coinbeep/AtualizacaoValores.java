@@ -44,7 +44,6 @@ public class AtualizacaoValores {
     }
 
     public static Moeda atualizarValor(String id_base, String id_quote, String rate) throws JSONException, IOException {
-//        String api_key = "84B39D25-999C-48C8-AB21-7759D07D8071";
         String api_key = "C811103D-BD03-462E-8E72-CC8816C262CD";
 
         String resposta = request("https://rest.coinapi.io/v1/exchangerate/" + id_base + "/" + id_quote + "?apikey=" + api_key);

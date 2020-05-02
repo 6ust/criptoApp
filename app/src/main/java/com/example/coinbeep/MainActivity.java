@@ -17,6 +17,7 @@ import android.widget.Toast;
 import org.json.JSONException;
 
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,12 +37,14 @@ public class MainActivity extends AppCompatActivity {
         TextView moedaValor = (TextView) findViewById(R.id.rate_value);
 
 
+        DecimalFormat df = new DecimalFormat(",###.##");
         Float moedaFloat = Float.parseFloat(moeda.getRate());
-        String rate = String.format("%.2f", moedaFloat);
-        moedaValor.setText(rate);
+
+        String rateStr = df.format(moedaFloat);
+
+        moedaValor.setText(rateStr);
     }
 
-    //ALTERAÇÃO DE MOEDA NOME PARA MOEDA ISO CODE
     private String getMoedaByCode(String name) {
         int i = -1;
         for (String cc: getResources().getStringArray(R.array.moedas_name)) {

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CoinBeep</string>
+    <string name="app_name">Crypto Rate</string>
     <string name="atualizar">Atualizar</string>
     <string name="valor">Valor</string>
     <string name="ip">IP</string>
@@ -7,9 +7,6 @@
     <string name="moeda_lbl">Moeda</string>
     <string name="rate_lbl">Valor: </string>
     <string name="rate_value"> 00.00 </string>
-
-    <!-- REMOVER MOEDA NAME E ISO CODE QUE NÃO TRAZEREM RESULTADOS   -->
-    <!-- EXEMPLO:  <item>Afegane afegão (؋)</item> E <item>AFN</item> -->
 
     <string-array name="moedas_name">
         <item>Coroa checa (Kč)</item>

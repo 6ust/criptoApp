@@ -6,37 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/tvCriptomoeda"
         android:layout_width="101dp"
         android:layout_height="28dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:text="@string/criptomoeda_lbl"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/spCriptomoeda"
         android:layout_width="0dp"
         android:layout_height="28dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="30dp"
         android:entries="@array/criptomoedas_name_array"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tvCriptomoeda"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvMoeda"
@@ -50,8 +40,8 @@
 
     <Spinner
         android:id="@+id/spMoeda"
-        android:layout_width="241dp"
-        android:layout_height="38dp"
+        android:layout_width="292dp"
+        android:layout_height="36dp"
         android:layout_marginTop="30dp"
         android:entries="@array/moedas_name"
         app:layout_constraintEnd_toEndOf="parent"
