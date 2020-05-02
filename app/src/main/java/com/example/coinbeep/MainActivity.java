@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         Float moedaFloat = Float.parseFloat(moeda.getRate());
         String rate = String.format("%.2f", moedaFloat);
-        moedaValor.setText(moeda.getRate());
+        moedaValor.setText(rate);
     }
 
     //ALTERAÇÃO DE MOEDA NOME PARA MOEDA ISO CODE
