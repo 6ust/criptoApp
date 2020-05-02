@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         Moeda moeda =  AtualizacaoValores.atualizarValor(base_param,quote_param,"");
         TextView moedaValor = (TextView) findViewById(R.id.rate_value);
 
-
         DecimalFormat df = new DecimalFormat(",###.##");
         Float moedaFloat = Float.parseFloat(moeda.getRate());
 
@@ -45,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         moedaValor.setText(rateStr);
     }
 
+    //ALTERAÇÃO DE MOEDA NOME PARA MOEDA ISO CODE
     private String getMoedaByCode(String name) {
         int i = -1;
         for (String cc: getResources().getStringArray(R.array.moedas_name)) {
@@ -78,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
         base = getCriptomoedaByCode(base);
         quote = getMoedaByCode(quote);
 
-        Toast.makeText(this, quote, Toast.LENGTH_LONG).show();
         try {
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.INTERNET) != PackageManager.PERMISSION_DENIED) {
                 ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.INTERNET}, 1);
